@@ -1,0 +1,28 @@
+@Orders_HostAddress = http://localhost:5011
+
+# GET {{Orders_HostAddress}}/api/orders
+# Accept: application/json
+
+# GET {{Orders_HostAddress}}/api/orders/4
+# Accept: application/json
+
+# POST {{Orders_HostAddress}}/api/orders
+# Content-Type: application/json
+
+# {
+#   "number": "ORD-007",
+#   "total": 170.75
+# }
+
+# PUT {{Orders_HostAddress}}/api/orders/1
+# Content-Type: application/json
+
+# {
+#   "number": "ORD-004-UPDATED",
+#   "total": 250.00
+# }
+
+# DELETE {{Orders_HostAddress}}/api/orders/1
+
+# GET {{Orders_HostAddress}}/api/orders/search?number=ord
+GET {{Orders_HostAddress}}/api/orders/search?number=ord&minTotal=200
