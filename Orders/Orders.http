@@ -25,4 +25,6 @@
 # DELETE {{Orders_HostAddress}}/api/orders/1
 
 # GET {{Orders_HostAddress}}/api/orders/search?number=ord
-GET {{Orders_HostAddress}}/api/orders/search?number=ord&minTotal=200
+# GET {{Orders_HostAddress}}/api/orders/search?number=ord&minTotal=200
+
+GET {{Orders_HostAddress}}/swagger
